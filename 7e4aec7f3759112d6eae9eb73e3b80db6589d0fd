@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a75e904_17f2789a",
+        "filename": "pysflib.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7
+      },
+      "writtenOn": "2017-02-23T10:32:17Z",
+      "side": 1,
+      "message": "Requires*",
+      "revId": "7e4aec7f3759112d6eae9eb73e3b80db6589d0fd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    }
+  ]
+}
