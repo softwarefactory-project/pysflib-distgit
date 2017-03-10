@@ -1,7 +1,7 @@
 %global         sum Python library used by the Software Factory project
 
 Name:           pysflib
-Version:        0.6.0
+Version:        0.7.0
 Release:        1%{?dist}
 Summary:        %{sum}
 
@@ -63,9 +63,11 @@ with bundled services.
 %autosetup -n %{name}-%{version}
 
 %build
+export PBR_VERSION=%{version}
 %{__python2} setup.py build
 
 %install
+export PBR_VERSION=%{version}
 %{__python2} setup.py install --skip-build --root %{buildroot}
 
 %check
@@ -75,5 +77,8 @@ nosetests -v
 %{python2_sitelib}/*
 
 %changelog
+* Fri Mar 10 2017 Tristan Cacqueray <tdecacqu@redhat.com> - 0.7.0-1
+- Bump to 0.7.0
+
 * Tue Feb 22 2017 Fabien Boucher <fboucher@redhat.com> - 1.0.0-1
 - Initial packaging
