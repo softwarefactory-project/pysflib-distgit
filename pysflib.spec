@@ -2,7 +2,7 @@
 
 Name:           pysflib
 Version:        0.7.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        %{sum}
 
 License:        ASL 2.0
@@ -13,7 +13,6 @@ BuildArch:      noarch
 
 Requires:       python2-pygerrit
 Requires:       python2-storyboardclient
-Requires:       python2-redmine
 Requires:       python-jenkins
 Requires:       PyYAML
 Requires:       python-six
@@ -25,7 +24,6 @@ Buildrequires:  python-nose
 Buildrequires:  python2-mock
 BuildRequires:  python2-pygerrit
 BuildRequires:  python2-storyboardclient
-BuildRequires:  python2-redmine
 BuildRequires:  python-jenkins
 BuildRequires:  PyYAML
 Buildrequires:  python-six
@@ -38,7 +36,6 @@ with bundled services.
 Summary:        %{sum}
 Requires:       python2-pygerrit
 Requires:       python2-storyboardclient
-Requires:       python2-redmine
 Requires:       python-jenkins
 Requires:       PyYAML
 Requires:       python-six
@@ -50,7 +47,6 @@ Buildrequires:  python-nose
 Buildrequires:  python2-mock
 BuildRequires:  python2-pygerrit
 BuildRequires:  python2-storyboardclient
-BuildRequires:  python2-redmine
 BuildRequires:  python-jenkins
 BuildRequires:  PyYAML
 Buildrequires:  python-six
@@ -77,6 +73,9 @@ nosetests -v
 %{python2_sitelib}/*
 
 %changelog
+* Tue Mar 29 2017 Fabien Boucher <fboucher@redhat.com> - 0.7.0-2
+- Remove dependency to pyton-redmine
+
 * Fri Mar 10 2017 Tristan Cacqueray <tdecacqu@redhat.com> - 0.7.0-1
 - Bump to 0.7.0
 
